@@ -9,7 +9,7 @@
 * **arXiv.org**: to be announced
 
 
-## Table of contents
+### Table of contents
 * [Description of the project](#description-of-the-project)
 * [AGN catalog](#agn-catalog)
 * [Technologies](#technologies)
