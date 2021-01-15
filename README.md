@@ -59,4 +59,8 @@ d
 e
 
 ### SED fitting
-f
+
+<img style="float: right;" src="/SED_fitting/SED_fits_for_agn_candidates_catalog/47499_best_model.png" alt="drawing" width="600"/>
+
+
+
