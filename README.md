@@ -36,7 +36,7 @@ Catalog description:
 * **N2m**, **N3m**, **N4m** - object brightness measured in the near-IR filters of AKARI/IRC instrument (AB magnitude system). The **me** column contains measurement uncertainy of a corresponding filter (e.g. **N2me** is a measurement error of **N2m**).
 * **S7m**, **S9m**, **S11m**, **L15m**, **L18m**, **L24m** - object brightness measured in the mid-IR filters of AKARI/IRC instrument (AB magnitude system). The **me** column contains measurement uncertainy of a corresponding filter.
 * **sum_y** - sum of predictions from the voting scheme (see paper for more information).
-* **pred_y** - final classifier prediction. 1 - AGN, 0 - not AGN. In the case of final AGN catalog all are equal 1.
+* **pred_y** - final classifier prediction. **1** - AGN, **0** - not AGN. In the case of final AGN catalog all are equal 1.
 
 ### Technologies
 c
