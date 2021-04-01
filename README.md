@@ -30,9 +30,13 @@ Final catalog of AGN candidates can be found in **agn_candidates_catalog.csv** f
 Catalog description:
 * **RA**, **DEC** - Position of the object (J2000).
 * **AKR_ID** - ID of the object in the AKARI database.
-* **HSC-ID** - ID of the object in the North Ecliptic Pole SUBARU/HSC catalog (Goto et al. 2017, Oi et al. 2020, Kim et al. 2020).
-* **G**,  - object brightness measured in G filter of SUBARU/HSC instrument. Value is presented in the AB magnitude system. Reader can also find measurements of **R**, **I**, **Z**, **Y** filters respectively.
+* **HSC_ID** - ID of the object in the North Ecliptic Pole SUBARU/HSC catalog (Goto et al. 2017, Oi et al. 2020, Kim et al. 2020).
+* **G**  - object brightness measured in G filter of SUBARU/HSC instrument. Value is presented in the AB magnitude system. Reader can also find measurements of **R**, **I**, **Z**, **Y** filters respectively.
 * **GCme** - **G** measurement uncertainty. **Rme**, **Ime**, **Zme**, **Yme** uncertainties correspond the remaining SUBARU/HSC filters. These uncertainties are understimated due to the SUBARU/HSC data reduction pipeline properties.
+* **N2**, **N3**, **N4** - object brightness measured in the near-IR filters of AKARI/IRC instrument (AB magnitude system). The **me** column contains measurement uncertainy of a corresponding filter (e.g. **N2me** is a measurement error of **N2**).
+* **S7**, **S9**, **S11**, **L15**, **L18**, **L24** - object brightness measured in the mid-IR filters of AKARI/IRC instrument (AB magnitude system). The **me** column contains measurement uncertainy of a corresponding filter.
+* **sum_y** - sum of predictions from the voting scheme (see paper for more information).
+* **pred_y** - final classifier prediction. 1 - AGN, 0 - not AGN. In the case of final AGN catalog all are equal 1.
 
 ### Technologies
 c
