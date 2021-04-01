@@ -42,7 +42,21 @@ Catalog description:
 c
 
 ### Training samples
-d
+Are available in **training_samples** directory.
+* **training_sample.csv** - objects used for training in the main part of the paper.
+* **training_sample_for_2nd_iteration_experiment.csv** - subset of training_sample.csv with mid-IR measurements. It was used for the second iteration experiment (see paper).
+
+**CSV files description:**
+* **Fm**, **Fme** - AB magnitude brighteness and its measurement uncertainty for a corresponding "F" filter. Same notation as in the AGN candidates catalog described above.
+* **F1-F2** - colors created from "F1" and "F2" filters. In this case **m** was removed from the filter names to increase readability.
+* **specz** - spectroscopic redshift.
+* **clss** - class of the object based on spectroscopic or X-ray measurements.
+* **Y** - label of the object based on spectroscopic or X-ray measurements. **1**-AGN, **0**- not AGN. **WARNING:** do not confuse Y label with Ym brightness. 
+* **sum_y** - sum of predictions from the voting scheme obtained via 5-fold cross validation (see paper).
+* **y_pred** - final prediction of the voting scheme classifier obtained via 5-fold cross validation (see paper).
+* **fuzzy_dist** - instance weights based on the distance from a class center (see paper for more details).
+* **fuzzy_err** - instance weights based on measurement uncertainties in a particular class (see paper for more details).
+
 
 ### Training results
 e
