@@ -59,7 +59,17 @@ Are available in **training_samples** directory.
 
 
 ### Training results
-e
+The **training_results** directory contains detailed information about training of classifiers. Directory tree is structured as follows:
+* **main_training** - contains information from the training of main classifiers used to produce fingal catalog of AGN candidates.
+* **second_interation_experiment_training** - results from the second iteration experiment.
+    * **clfname_clsbalance** - directory containing training results of the **clfname** classifier (*SVM* for support vector machine, *XGB* for XGBoost, *RF* for random forest, *ET* for extremely randomized trees, *logistic* for logistic regression, *hard_voting* for majority voting scheme, *stacked_classifier* for soft voting scheme based on probabilties obtained via logistic regression) with (*balanced*) or without (*non_balanced*) class weights **clsbalance**.
+        * **instance_weight** - if classifier was using instance weights (**fuzzy_err* - instance weights based on measurement uncertainty, **fuzzy_dist** - instance weights based on distance from the class center, **normal** - no instance weights).
+            * **best_params** - best model parameters obtained during training.
+            * **gs_results** - detailed metric values obtained during grid search.
+            * **metrics** - mean values obtained from **gs_results** data.
+            * **std** - standard deviation obtained from **gs_results** data.
+            * **pr_curve** - precision-recall curve (available if classifier was performing probability estimation).
+            * **training_prediction** - prediction performed on the data during 5-fold cross validation.
 
 ### SED fitting
 
