@@ -26,7 +26,13 @@
 
 
 ### AGN catalog
-b
+Final catalog of AGN candidates can be found in **agn_candidates_catalog.csv** file.
+Catalog description:
+* **RA**, **DEC** - Position of the object (J2000).
+* **AKR_ID** - ID of the object in the AKARI database.
+* **HSC-ID** - ID of the object in the North Ecliptic Pole SUBARU/HSC catalog (Goto et al. 2017, Oi et al. 2020, Kim et al. 2020).
+* **G**,  - object brightness measured in G filter of SUBARU/HSC instrument. Value is presented in the AB magnitude system. Reader can also find measurements of **R**, **I**, **Z**, **Y** filters respectively.
+* **GCme** - **G** measurement uncertainty. **Rme**, **Ime**, **Zme**, **Yme** uncertainties correspond the remaining SUBARU/HSC filters. These uncertainties are understimated due to the SUBARU/HSC data reduction pipeline properties.
 
 ### Technologies
 c
