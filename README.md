@@ -1,14 +1,9 @@
 
 ![](img_w.jpeg?raw=true "Optional Title")
 
-<<<<<<< HEAD
 ## Active Galactic Nuclei catalog from the AKARI NEP Wide field
-**Supplement for the publication.**
-=======
- Active Galactic Nuclei catalog from the AKARI NEP Wide field
- ===========
+
 **Publication supplement**
->>>>>>> a5545f3ceb278d93b114e5b2edec6480b25d9a28
 
 * **Status**: submitted to Astronomy & Astrophysics
 * **arXiv.org**: to be announced
@@ -50,7 +45,7 @@ Final catalog of AGN candidates can be found in **agn_candidates_catalog.csv** f
 #### SED fitting results
 The **SED_fitting** directory contains images of the SED template fitting results performed with the [CIGALE](https://cigale.lam.fr/) software for the AGN catalog. **Number in the name of PNG file** correspond to the AKARI ID (**AKR_ID**) of the object. Details about models and parameter values used in this work can be found in the paper.
 
-<img style="float: right;" src="/SED_fitting/SED_fits_for_agn_candidates_catalog/47499_best_model.png" alt="drawing" width="400"/>
+<img style="float: right;" src="/SED_fitting/47499_best_model.png" alt="drawing" width="400"/>
 
 
 ### Technologies
