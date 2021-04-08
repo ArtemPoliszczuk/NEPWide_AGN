@@ -4,18 +4,20 @@
 ## Active Galactic Nuclei catalog from the AKARI NEP Wide field
 **Supplement for the publication.**
 
-* **Status**: submitted to A&A
-* **Astronomy & Astrophysics**: to be announced
+* **Status**: submitted to Astronomy & Astrophysics
 * **arXiv.org**: to be announced
 
 
 ### Table of contents
 * [Description of the project](#description-of-the-project)
 * [AGN catalog](#agn-catalog)
-* [Technologies](#technologies)
-* [Training samples](#training-samples)
-* [Training results](#training-results)
-* [SED fitting](#sed-fitting)
+   * [Catalog description](#catalog-description)
+   * [SED fitting results](#sed-fitting-results)
+* [Classifier training](#classifier-training)
+   * [Technologies](#technologies)
+   * [Training samples](#training-samples)
+   * [Training results](#training-results)
+
 
 ### Description of the project
 * **Context**. The North Ecliptic Pole (NEP) field provides a unique set of panchromatic data, well suited for active galactic nuclei (AGN) studies. Selection of AGN candidates is often based on mid-infrared (MIR) measurements. Such method, despite its effectiveness, strongly reduces a catalog volume due to the MIR detection condition. Modern machine learning techniques can solve this problem by finding similar selection criteria using only optical and near-infrared (NIR) data.
@@ -27,7 +29,8 @@
 
 ### AGN catalog
 Final catalog of AGN candidates can be found in **agn_candidates_catalog.csv** file.
-Catalog description:
+
+#### Catalog description:
 * **RA**, **DEC** - Position of the object (J2000).
 * **AKR_ID** - ID of the object in the AKARI database.
 * **HSC_ID** - ID of the object in the North Ecliptic Pole SUBARU/HSC catalog (Goto et al. 2017, Oi et al. 2020, Kim et al. 2020).
@@ -38,15 +41,21 @@ Catalog description:
 * **sum_y** - sum of predictions from the voting scheme (see paper for more information).
 * **pred_y** - final classifier prediction. **1** - AGN, **0** - not AGN. In the case of final AGN catalog all are equal 1.
 
+#### SED fitting results
+The **SED_fitting** directory contains images of the SED template fitting results performed with the [CIGALE](https://cigale.lam.fr/) software for the AGN catalog. **Number in the name of PNG file** correspond to the AKARI ID (**AKR_ID**) of the object. Details about models and parameter values used in this work can be found in the paper.
+
+<img style="float: right;" src="/SED_fitting/SED_fits_for_agn_candidates_catalog/47499_best_model.png" alt="drawing" width="400"/>
+
+
 ### Technologies
-c
+All the codes were written in Python 3. We used [Numpy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/) for data manipulation and [Matplotlib](https://matplotlib.org/) to visualize the results. The ML part of the project was based on [scikit-learn](https://scikit-learn.org/stable/) and [XGBoost](https://xgboost.ai/) libraries. The spectral energy distribution fitting was donve via [CIGALE](https://cigale.lam.fr/) software.
 
 ### Training samples
 Are available in **training_samples** directory.
 * **training_sample.csv** - objects used for training in the main part of the paper.
 * **training_sample_for_2nd_iteration_experiment.csv** - subset of training_sample.csv with mid-IR measurements. It was used for the second iteration experiment (see paper).
 
-**CSV files description:**
+#### CSV files description:
 * **Fm**, **Fme** - AB magnitude brighteness and its measurement uncertainty for a corresponding "F" filter. Same notation as in the AGN candidates catalog described above.
 * **F1-F2** - colors created from "F1" and "F2" filters. In this case **m** was removed from the filter names to increase readability.
 * **specz** - spectroscopic redshift.
@@ -71,9 +80,6 @@ The **training_results** directory contains detailed information about training 
             * **pr_curve** - precision-recall curve (available if classifier was performing probability estimation).
             * **training_prediction** - prediction performed on the data during 5-fold cross validation.
 
-### SED fitting
-
-<img style="float: right;" src="/SED_fitting/SED_fits_for_agn_candidates_catalog/47499_best_model.png" alt="drawing" width="600"/>
 
 
 
