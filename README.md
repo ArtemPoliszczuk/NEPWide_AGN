@@ -1,8 +1,14 @@
 
 ![](img_w.jpeg?raw=true "Optional Title")
 
+<<<<<<< HEAD
 ## Active Galactic Nuclei catalog from the AKARI NEP Wide field
 **Supplement for the publication.**
+=======
+ Active Galactic Nuclei catalog from the AKARI NEP Wide field
+ ===========
+**Publication supplement**
+>>>>>>> a5545f3ceb278d93b114e5b2edec6480b25d9a28
 
 * **Status**: submitted to Astronomy & Astrophysics
 * **arXiv.org**: to be announced
