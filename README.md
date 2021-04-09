@@ -21,7 +21,7 @@
    * [Training results](#training-results)
 
 
-### Description of the project
+## Description of the project
 * **Context**. The North Ecliptic Pole (NEP) field provides a unique set of panchromatic data, well suited for active galactic nuclei (AGN) studies. Selection of AGN candidates is often based on mid-infrared (MIR) measurements. Such method, despite its effectiveness, strongly reduces a catalog volume due to the MIR detection condition. Modern machine learning techniques can solve this problem by finding similar selection criteria using only optical and near-infrared (NIR) data.
 * **Aims**. Aims of this work were to create a reliable AGN candidates catalog from the NEP field using a combination of optical  SUBARU/HSC and NIR AKARI/IRC data and, consequently, to develop an efficient alternative for the MIR-based AKARI/IRC selection technique.
 * **Methods**. A set of supervised machine learning algorithms was tested in order to perform an efficient AGN selection. Best of the models were formed into a majority voting scheme, which used the most popular classification result to produce the final AGN catalog. Additional analysis of catalog properties was performed in form of the spectral energy distribution (SED) fitting via the CIGALE software.
@@ -29,7 +29,7 @@
 * **Conclusions**. New selection methods presented in this paper proves to be a better alternative for the MIR color AGN selection. Machine learning techniques not only show similar effectiveness, but also involve less demanding optical and NIR observations, substantially increasing the volume of available data samples.
 
 
-### AGN catalog
+## AGN catalog
 Final catalog of AGN candidates can be found in **agn_candidates_catalog.csv** file.
 
 #### Catalog description:
@@ -48,6 +48,7 @@ The **SED_fitting** directory contains images of the SED template fitting result
 
 <img style="float: right;" src="/SED_fitting/47499_best_model.png" alt="drawing" width="400"/>
 
+## Classifier training
 
 ### Technologies
 All the codes were written in Python 3. We used [Numpy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/) for data manipulation and [Matplotlib](https://matplotlib.org/) to visualize the results. The ML part of the project was based on [scikit-learn](https://scikit-learn.org/stable/) and [XGBoost](https://xgboost.ai/) libraries. The spectral energy distribution fitting was donve via [CIGALE](https://cigale.lam.fr/) software.
@@ -68,7 +69,7 @@ Are available in **training_samples** directory.
 * **fuzzy_dist** - instance weights based on the distance from a class center (see paper for more details).
 * **fuzzy_err** - instance weights based on measurement uncertainties in a particular class (see paper for more details).
 
-#### Python scripts
+### Python scripts
 Python scripts which were used to train ML algorithms are available in **codes_for_training** directory.
 *Note:* some feature (or other column) names might slightly differ from names used in published csv files (training samples and AGN catalog).
 *Note:* generalization data set is not published in this repository.
