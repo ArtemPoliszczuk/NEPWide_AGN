@@ -17,6 +17,7 @@
 * [Classifier training](#classifier-training)
    * [Technologies](#technologies)
    * [Training samples](#training-samples)
+   * [Python scripts](#python-scripts)
    * [Training results](#training-results)
 
 
@@ -67,6 +68,10 @@ Are available in **training_samples** directory.
 * **fuzzy_dist** - instance weights based on the distance from a class center (see paper for more details).
 * **fuzzy_err** - instance weights based on measurement uncertainties in a particular class (see paper for more details).
 
+#### Python scripts
+Python scripts which were used to train ML algorithms are available in **codes_for_training** directory.
+*Note:* some feature (or other column) names might slightly differ from names used in published csv files (training samples and AGN catalog).
+*Note:* generalization data set is not published in this repository.
 
 ### Training results
 The **training_results** directory contains detailed information about training of classifiers. Directory tree is structured as follows:
