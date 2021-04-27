@@ -5,7 +5,7 @@
 
 **Publication supplement**
 
-* **Status**: submitted to Astronomy & Astrophysics
+* **Status**: accepted for publication in Astronomy and Astrophysics.
 * **arXiv.org**: to be announced
 
 
