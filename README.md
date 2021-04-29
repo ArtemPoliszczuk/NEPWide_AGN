@@ -6,7 +6,7 @@
 **Publication supplement**
 
 * **Status**: accepted for publication in Astronomy and Astrophysics.
-* **arXiv.org**: to be announced
+* **arXiv.org**: https://arxiv.org/abs/2104.13428
 
 
 ### Table of contents
